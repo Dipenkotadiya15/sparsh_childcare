@@ -1,0 +1,54 @@
+.main-header { border-top: 10px solid #88d1cb; }
+
+.header1_2 a{
+    color: #797878fc;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.header1_2 a:hover {
+    background-color: #4fa0b5;
+    color: #fff;
+    
+}
+
+.header1_1 span {
+    color: #029DB4;
+}
+
+.navbar {
+    background-color: lightgray;
+    border: 1px solid #d9d8d8fe;
+    border-radius: 40px;
+    width: 95%;
+}
+.container-fluid a img {
+    height: auto;
+    width: 175px;
+    max-width: 100%;
+}
+
+.nav-item a:hover, .nav-item a .active {
+    color: #88d1cb;
+}
+
+.appointment button{
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    background-color: #88d1cb;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.bgimg {
+    position: relative;
+}
