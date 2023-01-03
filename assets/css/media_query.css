@@ -1,27 +1,30 @@
 @media screen and (max-width:1599px) {
-
+    .halfimg { width: 350px; top: 38%; }
 }
 
 @media screen and (max-width:1399px) {
-
+    .halfimg { width: 315px; top: 30%; }
 }
 
 @media screen and (max-width:1199px) {
-
+    .halfimg { width: 275px; top: 25%; }
 }
 
 @media screen and (max-width:991px) {
     .navbar { width: 100%; }
+    .opd_1 { width: 100%; }
+    .opd_2 { width: 100%; margin-top: 100px; }
+    .halfimg { width: 375px; top: 50%; }
 }
 
 @media screen and (max-width:767px) {
-
+    .halfimg { width: 300px; top: 60%; }
 }
 
 @media screen and (max-width:576px) {
-
+    .halfimg { width: 265px; }
 }
 
 @media screen and (max-width:425px) {
-
+    .halfimg { width: 180px; top: 55%; }
 }

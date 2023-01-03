@@ -1,3 +1,6 @@
+* { box-sizing: border-box; }
+
+p { color: darkgray;}
 .main-header { border-top: 10px solid #88d1cb; }
 
 .header1_2 a{
@@ -33,13 +36,15 @@
     max-width: 100%;
 }
 
-.nav-item a:hover, .nav-item a .active {
-    color: #88d1cb;
+.nav-item a:hover{
+    color: #029DB4;
 }
+
+.active { color: #029DB4 !important; }
 
 .appointment button{
     position: absolute;
-    right: 0;
+    right: 2%;
     bottom: 15%;
     background-color: #88d1cb;
     color: #fff;
@@ -48,7 +53,185 @@
     border-radius: 5px;
 }
 
-
-.bgimg {
-    position: relative;
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 99;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
+    animation: 0.3s ease-in-out ;
+    border: none;
+    border-radius: 0;
+    opacity: 0.9;   
 }
+
+
+/* <!---------- 2_Background Image For Sparsh Hospital  ----------> */
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: calc(50% - 50px);
+    right: 0;
+    opacity: 0.5;
+    font-size: 25px !important;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black !important;
+    color: #fff !important;
+    background-color: #111 !important;
+    margin: 5px 15px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: 0;
+    opacity: 0.5;
+    font-size: 25px !important;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black !important;
+    color: #fff !important;
+    background-color: #111 !important;
+    margin: 5px 15px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover {
+    opacity: 1;
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+    opacity: 1;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+
+
+  /* <!---------- 3_About Us Cotent  ----------> */
+  .opd { 
+    margin-top: 100px; 
+    /* background-color: rgba(255, 255, 255); */
+    /* opacity: 1;  */
+  }
+
+  .fullimg {
+    max-width: 100%;
+  }
+
+  .halfimg {
+    position: absolute;
+    width: 275px;
+    max-width: 100%;
+    top: 25%;
+    left: 0;
+  }
+
+  .opd_1 { width: 50%; }
+  .opd_2 { width: 45%; }
+
+  .opd_2 button {
+    background-color: #88d1cb;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+  }
+
+    .aboutbg {
+        background-image: url(../ss/about_bg.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: left bottom;
+        background-color: rgba(255, 255, 255, 0.5);
+        /* opacity: 0.5; */
+    }   
+
+
+    /* <!---------- 4_Facilities Cotent  ----------> */
+
+    .servicebg {
+        background-image: url(../ss/service_bg.png) no-repeat;
+        background-position: center top;
+        background-size: 100%;
+    }
+
+    .facilities_img {
+        border: 1px solid darkgray;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        line-height: 65px;
+    }
+
+    .facilities_img img {
+        height: auto;
+        width: 50px;
+        color: #029DB4 !important;
+    }
+
+    /* .s_content {
+        transition: 0.5s;
+        transform: translateY(100);
+    } */
+
+    .s_content p { font-size: 13px; }
+
+    /* .s_content:hover {
+        background: lightblue;
+        transform: scaleY(1.1);
+        border-bottom: 5px solid #88d1cb;
+      
+        transition: 0.3s;
+    }
+    .s_content .facilities_img:hover {
+        border: 1px solid darkgray;
+        border-radius: 0;
+        width: 70px;
+        height: 70px;
+        line-height: 65px;
+        background-color: lightblue;
+        color: white;
+    } */
+
+    /* .abc1:hover .s_content {
+        transform: translateY(95%);
+        background: lightblue;
+        border-bottom: 5px solid #88d1cb;
+    
+    } */
+    
+
+    .abc1 .s_content {
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+    }
+
+    .abc1:hover .s_content { 
+        top: -20px;
+        background-color: lightblue;
+        border-bottom: 5px solid red;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    }
+
+    .abc1:hover .facilities_img {
+        border: 0;
+        font-size: 50px;
+    }
+
+
+    /* <!---------- 5_Doctor Cotent  ----------> */
+    .doctorbg {
+        background: url(../ss/about_bg.png) no-repeat;
+        background-position: left bottom;
+        background-size: 50%;
+    }
