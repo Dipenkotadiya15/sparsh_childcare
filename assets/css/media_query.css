@@ -20,20 +20,30 @@
     .navbar-collapse .navbar-nav { margin: 0; }
     .class2 img { margin-top: 50px; }
     .main .img { height: 850px;}
+    .contentcol { padding: 75px 12px 0; }
+    .doctor-content { width: 70%; margin: 0 auto; }
 }
 
 @media screen and (max-width:767px) {
     .halfimg { width: 300px; top: 60%; }
     .main .img { height: 750px; }
+    .copyright p { font-size: 15px; text-align: center; }
+    .contentcol { padding: 50px 12px 0; }
 }
 
 @media screen and (max-width:575px) {
     .halfimg { width: 265px; }
-    .contentcol { padding: 50px 10px 0; }
+    .contentcol { padding: 30px 10px 0; }
     .main .img { height: 660px; }
+    .class1 { text-align: center; }
+    .class2 { text-align: center; }
+    .class2 img { width: 85%; }
 }
 
 @media screen and (max-width:425px) {
     .halfimg { width: 180px; top: 55%; }
     .main .img { height: 570px; }
+    .class1 { text-align: center; }
+    .class2 { text-align: center; }
+    .class2 img { width: 60%; margin-top: 25px; }
 }
