@@ -40,8 +40,8 @@
 
   <!---------- 1_Header Section  ---------->
   <header class="main-header">
-    <div class="container position-relative">
-      <div class="header1 d-flex mt-1 d-none d-lg-flex">
+    <div class="container-xl position-relative" style="--bs-gutter-x: 0">
+      <div class="header1 d-flex mt-1 d-none d-xl-flex">
         <div class="header1_1 d-flex" style="font-size: 13px;">
           <div class="d-flex me-3 align-items-center">
             <span><i class="fa-solid fa-location-dot"></i></span>
@@ -72,15 +72,15 @@
             </div> -->
 
 
-      <nav class="navbar navbar-expand-lg bg-light mt-2 animated slidetodown">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg bg-light mt-xl-2 animated slidetodown">
+        <div class="container-xl">
           <a class="navbar-brand" href="./index.html"><img src="./assets/ss/logo.png" alt="Logo" class="me-auto"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active text-uppercase fw-semibold" aria-current="page" href="./index.html">Home</a>
@@ -110,7 +110,7 @@
               </li>
             </ul>
           </div>
-          <div class="align-self-center appointment d-none d-lg-block"><button>Appointment</button></div>
+          <div class="align-self-center appointment d-none d-lg-block"><button class="d-none d-xl-block">Appointment</button></div>
         </div>
       </nav>
     </div>
@@ -119,13 +119,15 @@
   </header>
 
   <!---------- 2_Background Image For Sparsh Hospital  ---------->
-  <div id="owl-demo" class="owl-carousel owl-theme mt-5">
+  <section class="fullmoj">
+  <div id="owl-demo" class="owl-carousel owl-theme mt-xl-5">
 
     <div class="item"><img src="./assets/ss/bg_1.jpg" alt="Owl Image"></div>
     <div class="item"><img src="./assets/ss/bg_2.jpg" alt="Owl Image"></div>
     <div class="item"><img src="./assets/ss/bg_3.jpg" alt="Owl Image"></div>
 
   </div>
+</section>
 
   <!---------- 3_About Us Cotent  ---------->
   <div class="aboutbg">
@@ -165,7 +167,7 @@
   <div class="servicebg">
     <div class="container">
 
-      <div class="text-center mt-5">
+      <div class="text-center">
         <p class="m-0 mb-2">OUR FACILITIES</p>
         <h2 class="m-0 mb-2">We Care Our Patients.</h2>
         <img src="./assets/ss/line_1.png" alt="">
@@ -240,7 +242,7 @@
   </div>
 
   <!---------- 5_Doctor Cotent  ---------->
-  <div class="doctorbg mt-5">
+  <div class="doctorbg mt-5 mb-5">
     <div class="main-content11">
       <div class="container">
 
@@ -309,8 +311,11 @@
     </div>
   </div>
 
+
+
+
   <!---------- 7_HAPPY Patient  ---------->
-  <div class="patientnbg position-relative">
+  <div class="patientnbg position-relative" style="padding: 50px 0;">
     <div class="container">
 
       <div class="text-center mt-5">
@@ -319,34 +324,90 @@
         <img src="./assets/ss/line_1.png" alt="">
       </div>
 
-      <div class="main-carousel123">
+      <div class="main-slider">
 
-      <div class="owl-carousel owl-theme my-5" id="owl-demo3">
-        <div class="item1">
-          <p>Very good child care center ..Dr kartik is very much experienced pediatrician..who cares children very politely.. Excellent facilities and clean rooms..very much supportive staff..You feel relaxed after coming here..best hospital in pal</p>
+        <div class="first-slider">
+        <div class="owl-carousel owl-theme mt-5" id="owl-demo3">
+          <div class="item1">
+            <p>Very good child care center ..Dr kartik is very much experienced pediatrician..who cares children very politely.. Excellent facilities and clean rooms..very much supportive staff..You feel relaxed after coming here..best hospital in pal</p>
+          </div>
+          <div class="item1">
+            <p>Very much Skilled docters and excellent staff..
+              Services are quite satisfactory</p>
+          </div>
+          <div class="item1">
+            <p>Nice staff and highly skilled doctor. baby care unit has good atmosphere.</p>
+          </div>
+          <div class="item1">
+            <p>Quality care and communication with experienced doctors and staff, good follow
+              up care is to be taken</p>
+          </div>
+          <div class="item1">
+            <p>My baby is normal now after treating him in NICU for 12 hrs. Doctor came in
+              emergency in 15 minutes on call. I recommend this hospital for neonatal and pediatrics
+              treatment. Thank you.</p>
+          </div>
         </div>
-        <div class="item1">
-          <p>Very much Skilled docters and excellent staff..
-            Services are quite satisfactory</p>
         </div>
-        <div class="item1">
-          <p>Nice staff and highly skilled doctor. baby care unit has good atmosphere.</p>
-        </div>
-        <div class="item1">
-          <p>Quality care and communication with experienced doctors and staff, good follow
-            up care is to be taken</p>
-        </div>
-        <div class="item1">
-          <p>My baby is normal now after treating him in NICU for 12 hrs. Doctor came in
-            emergency in 15 minutes on call. I recommend this hospital for neonatal and pediatrics
-            treatment. Thank you.</p>
+
+        <div class="second-slider " style="padding: 50px 0;">
+          <div class="slider owl-carousel" id="owl-demo4">
+  
+      <div class="item">
+        <img src="./assets/ss/avtar.jpg" alt="">
+        <div class="slider-caption">
+          <span><i class="fa-solid fa-quote-left"></i></span>
+          <p>Rahul Sharma</p>
         </div>
       </div>
-
-    </div>
-
+  
+      <div class="item">
+        <img src="./assets/ss/avtar.jpg" alt="">
+        <div class="slider-caption">
+          <span><i class="fa-solid fa-quote-left"></i></span>
+        <p>Rahul Sharma</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="./assets/ss/avtar.jpg" alt="">
+        <div class="slider-caption">
+          <span><i class="fa-solid fa-quote-left"></i></span>
+        <p>Rahul Sharma</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="./assets/ss/avtar.jpg" alt="">
+        <div class="slider-caption">
+          <span><i class="fa-solid fa-quote-left"></i></span>
+        <p>Rahul Sharma</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="./assets/ss/avtar.jpg" alt="">
+        <div class="slider-caption">
+          <span><i class="fa-solid fa-quote-left"></i></span>
+        <p>Rahul Sharma</p>
+        </div>
+      </div>
+  
     </div>
   </div>
+        
+  
+      </div>
+
+      </div>
+    </div>
+
+
+      
+
+    
+
+<!-- =============================================================================================== -->
 
   <!---------- 8_Mediclaim Facility  ---------->
   <div class="container">

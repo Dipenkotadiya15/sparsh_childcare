@@ -21,6 +21,7 @@ p { color: darkgray;}
 .header1_2 a:hover {
     background-color: #4fa0b5;
     color: #fff;
+    transition: all 0.7s ease;
     
 }
 
@@ -39,6 +40,7 @@ p { color: darkgray;}
     height: auto;
     width: 150px;
     max-width: 100%;
+    padding: 10px 0 3px;
 }
 
 .nav-item a:hover{
@@ -77,7 +79,7 @@ p { color: darkgray;}
 
 .navbar.sticky .appointment button {
     position: absolute;
-    right: 9%;
+    right: 2%;
     bottom: 23%;
 }
 
@@ -93,9 +95,16 @@ p { color: darkgray;}
 
 
 /* <!---------- 2_Background Image For Sparsh Hospital  ----------> */
+.fullmoj {
+    width: 100% !important;
+    height: 70% !important;
+}
+
+.fullmoj #owl-demo .owl-stage-outer { height: 600px !important;}
+
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50% - 30px);
     right: 0;
     opacity: 0.5;
     font-size: 25px !important;
@@ -110,7 +119,7 @@ p { color: darkgray;}
 
 .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50% - 30px);
     left: 0;
     opacity: 0.5;
     font-size: 25px !important;
@@ -184,10 +193,11 @@ p { color: darkgray;}
 
     /* <!---------- 4_Facilities Cotent  ----------> */
 
-    .servicebg { position: relative; }
+    .servicebg { position: relative; padding: 90px 0; }
        
     .servicebg::before {
-        background: url(../ss/service_bg.png) no-repeat center top 100%;
+        background: url(../ss/service_bg.png) no-repeat center top;
+        background-size: 100%;
         content: "";
         position: absolute;
         top: 0;
@@ -314,7 +324,7 @@ p { color: darkgray;}
         border-radius: 50% 50% 0 0;
     }
 
-    /* <!---------- 6_Child-Room  ----------> */    
+    /* <!---------- 6_Child-Room  ----------> */ 
     .class1 .btn1 {
         background: black;
         color: white;
@@ -323,19 +333,15 @@ p { color: darkgray;}
         border-radius: 5px;
     }
 
-    .main {
-        position: relative;
-    }
-
-    .main .img {
-        width: 100%;
+    .class2 img {
         height: auto;
+        width: 100%;
+        position: relative;
+        margin-top: -75px;
+
     }
-
-    .contentcol { padding: 120px 12px 0; }
-    .class1, .class1 p { color: #fff; }
-
-    .content12 {
+    
+    .maindiv {
         background-color: #88d1cb;
         color: #fff;
         position: absolute;
@@ -346,13 +352,31 @@ p { color: darkgray;}
         height: 100%;
     }
 
-    .class2 img {
-        height: auto;
-        width: 100%;
-        margin-top: -75px;
+    .main {
+        position: relative;
+        margin: 150px 0 0; 
     }
 
-    .main { margin: 150px 0 0; }
+    .main .img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .contentcol { padding: 120px 12px 0; }
+    .class1, .class1 p { color: #fff; }
+    
+
+    .content12 {
+        background-color: #88d1cb;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.9;
+        height: 100%;
+    } 
+    
 
 
     /* <!---------- 7_HAPPY Patient  ----------> */
@@ -370,7 +394,7 @@ p { color: darkgray;}
 
     #owl-demo3 .item1 { margin: 0 100px ;}
 
-    #owl-demo3 .owl-nav button .owl-prev {
+    /* .patientnbg .main-slider .first-slider #owl-demo3 .owl-nav button .owl-prev {
         position: absolute;
         top: calc(50% - 50px);
         left: 0;
@@ -384,9 +408,105 @@ p { color: darkgray;}
         color: #4aded2 !important;
         background-color: #fff !important;
         margin: 5px 15px;
+    } */
+
+/* ============================================================================================ */
+   
+    .main-slider .second-slider .item { 
+        width: 100px;
+        border: none;
+        border-radius: 50%;
+        margin: 0 auto;
     }
 
-   
+    .main-slider .second-slider .item img { 
+        width: 150px;
+        border: none;
+        border-radius: 50%;  
+    } 
+
+    .main-slider .second-slider {
+        max-width: 345px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .main-slider .second-slider .owl-item.active.center { 
+        width: auto !important;
+        opacity: 1;
+    }
+
+    .main-slider .second-slider .owl-item.active { 
+        width: auto !important
+    }
+
+    .main-slider .first-slider .owl-carousel .owl-nav button.owl-next, 
+    .main-slider .first-slider .owl-carousel .owl-nav button.owl-prev { 
+        background-color: #fff !important;
+        color: #1d67d5 !important;
+        border: 1px solid #1d67d5 !important;
+        border-radius: 50% !important;
+    }
+
+    .main-slider .second-slider .item img {
+        transform: scale(0.9);
+        transition: all ease 0.6s;
+        width: 250px;
+    }
+
+    .main-slider .second-slider .item:hover img {
+        transform: scale(1.1);
+    }
+
+    .main-slider .second-slider .slider-caption {
+        position: absolute;
+        top: 77%;
+        left: 0;
+        z-index: 1;
+        text-align: center;
+    }
+    .main-slider .second-slider .slider-caption span  {
+        text-align: center;
+        border: none;
+        border-radius: 50%;
+        background: #fff;
+        color: black !important;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+    }
+
+    .main-slider .second-slider .slider-caption p { color: #88d1cb; }
+    
+    .main-slider .second-slider .owl-stage-outer {
+        overflow: visible !important;
+    }
+
+    .main-slider .second-slider .owl-item {
+        opacity: 0.4;
+        transition: all ease 0.4s;
+    }
+
+    
+
+    .main-slider .second-slider .owl-item .slider-caption {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    
+    .main-slider .second-slider .owl-item.active.center {
+        opacity: 1;
+    }
+    
+    .main-slider .second-slider .owl-item.active.center .slider-caption {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all ease 0.4s;
+    }
+
+/* ============================================================================================ */
 
     /* <!---------- 8_Mediclaim Facility  ----------> */
     .owl-carousel .item img {
