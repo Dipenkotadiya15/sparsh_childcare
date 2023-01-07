@@ -127,14 +127,14 @@ $(document).ready(function() {
 //   });
 
 
-
+// STICKY HEADER :-
 let scrollpos = window.scrollY;
 	const header = document.querySelector(".navbar");
 	const header_height = header.offsetHeight;
 
 	window.addEventListener('scroll', function () {
 		scrollpos = window.scrollY;
-		if (scrollpos >= header_height + 800) {
+		if (scrollpos >= header_height + 500) {
 			console.log(header_height);
 			header.classList.add('sticky');
 		} else {
@@ -143,5 +143,16 @@ let scrollpos = window.scrollY;
 	})
 
 
+
+    // SCROLL TO TOP :-
+    const toTop = document.querySelector('.to-top');
+
+    window.addEventListener('sccroll', () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add('active');
+        } else {
+            toTop.classList.remove('active');
+        }
+    })
 
     

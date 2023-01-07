@@ -10,9 +10,8 @@
 @media screen and (max-width:1199px) {
     .halfimg { width: 275px; top: 25%; }
     .navbar-collapse .navbar-nav { margin: 0 50px; }
-    .navbar {width: 100%; border:none; border-radius: 0; }
+    .navbar { width: 100%; border:none; border-radius: 0; }
     .navbar-collapse .navbar-nav {  margin: 0; }
-    /* .navbar a img { padding: 10px 0 3px; } */
 }
 
 @media screen and (max-width:991px) {
