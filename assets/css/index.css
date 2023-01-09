@@ -90,7 +90,7 @@ body {
     border: none;
     border-radius: 0;
     opacity: 0.9;   
-    padding: 15px 0;
+    padding: 38px 0 18px;
 }
 
 .navbar.sticky .theme-btn {
@@ -640,34 +640,6 @@ body {
         padding: 20px 0;
     }
 
-    /* .scroll-to-top {
-        position: fixed;
-        right: 30px;
-        bottom: 45px;
-        z-index: 999;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-        color: #1b2032;
-        background-color: #ffffff;
-        line-height: 40px;
-        border-radius: 50px 50px 0 0;
-        text-align: center;
-        display: block;
-        cursor: pointer;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
-        -webkit-transition: all 300ms ease;
-        transition: all 300ms ease;
-        opacity: 0;
-        
-    } */
-
-    /* .scroll-to-top.active{
-        bottom: 32px;
-        opacity: 1;
-        pointer-events: auto;
-    } */
-
     .to-top {
         background-color: #fff;
         color: #1f1f1f;
@@ -689,11 +661,6 @@ body {
         
     }
     .to-top:hover { color: #1f1f1f; }
-    /* .to-top.active {
-        bottom: 32px;
-        opacity: 1;
-        pointer-events: auto;
-    } */
 
     .copyright p { color: #fff; }      
 
@@ -704,11 +671,16 @@ body {
 
 /* ================================================================================================== */
 
-/* --------------------------------- NICU Department --------------------------------- */
+/* --------------------------------- Facilities Department --------------------------------- */
 
-.facilities, .opd_ward, .Vaccination  {  background-color: rgba(238, 238, 238, 0.163);}
+.facilities, .opd_ward, .Vaccination, .parents_corner_11  {  background-color: rgba(238, 238, 238, 0.163);}
+
 .facilities { padding-bottom: 50px; box-shadow: 10px 0 10px rgb(0 0 0 / 5%); }
-.nicubg { padding: 70px 0; 
+
+.opd_ward, .Vaccination, .parents_corner_11 { padding-bottom: 100px;  box-shadow: 10px 0 10px rgb(0 0 0 / 5%); }
+
+.nicubg, .parents_corner_bg, .contactbg { 
+    padding: 70px 0; 
     background-image: url(../ss/background_image.jpg);
     background-repeat: no-repeat;
     background-position: left;
@@ -727,6 +699,10 @@ body {
     width: 50px;
     height: 44px;
 }
+
+.Vaccination .box-width, 
+.facilities .box-width, 
+.opd_ward .box-width { width: 275px; }
 
 /* Facilities section  */
 
@@ -748,6 +724,129 @@ body {
     font-size: 20px;
 }
 
+.facilities .btn-hover,
+.Vaccination .btn-hover,
+.opd_ward  .btn-hover {
+    color: #88d1cb;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+
+.facilities .btn-hover .hello,
+.Vaccination .btn-hover .hello,
+.opd_ward  .btn-hover .hello,
+.facilities .btn-hover .play-img, 
+.Vaccination .btn-hover .play-img,
+.opd_ward  .btn-hover .play-img  { color: black; }
+
+.facilities .btn-hover::before,
+.Vaccination .btn-hover::before,
+.opd_ward  .btn-hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #88d1cb;
+    transform: translateX(-100%);
+    transition: all 0.5s linear; 
+}   
+
+.facilities .btn-hover:hover:before,
+.Vaccination .btn-hover:hover:before,
+.opd_ward  .btn-hover:hover:before {
+    transform: translateX(0);
+    z-index: -1;
+}
+
+ .facilities .btn-hover:hover .hello,
+ .Vaccination .btn-hover:hover .hello,
+ .opd_ward  .btn-hover:hover .hello { color: #fff; }
+
+ .facilities .btn-hover:hover .play-img,  
+ .Vaccination .btn-hover:hover .play-img, 
+ .opd_ward  .btn-hover:hover .play-img { 
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(91deg) brightness(108%) contrast(101%);
+  }
 
 
-.opd_ward, .Vaccination { padding-bottom: 100px;  box-shadow: 10px 0 10px rgb(0 0 0 / 5%); }
+ /* { padding-bottom: 100px;  box-shadow: 10px 0 10px rgb(0 0 0 / 5%); } */
+
+
+/* ================================================================================================== */
+
+/* --------------------------------- Parents Corner Department --------------------------------- */
+
+.doctors-timetable {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.doctors-timetable thead tr { background-color: #88d1cb; }
+
+.doctors-timetable thead tr th { 
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    width: 147px;
+    padding: 0 15px;
+    border: 1px solid #ffffff;
+    border-top: 0;
+}
+
+.doctors-timetable tbody tr {
+    position: relative;
+    text-align: center;
+}
+
+.doctors-timetable tbody tr td {
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms ease;
+   
+}
+.doctors-timetable tbody tr td span {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.doctors-timetable tbody tr td:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.doctors-timetable tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+.doctors-timetable tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* ================================================================================================== */
+
+/* --------------------------------- Contact_Us Department --------------------------------- */
+
+.mobile-icon a { color: black; text-decoration: none; } 
+.mobile-icon a:hover { color: black; text-decoration: underline; } 
+
+.main-box12:hover .box-upper {
+    top: -20px;
+    background-color: #fff;
+    border-bottom: 5px solid #88d1cb;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+}
+
+.main-box12 .box-upper {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    padding: 25px;
+}

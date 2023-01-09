@@ -12,6 +12,7 @@
     .navbar-collapse .navbar-nav { margin: 0 50px; }
     .navbar { width: 100%; border:none; border-radius: 0; }
     .navbar-collapse .navbar-nav {  margin: 0; }
+    
 }
 
 @media screen and (max-width:991px) {
