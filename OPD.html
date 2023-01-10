@@ -56,12 +56,14 @@
             <p class="mb-0 ms-2">+91 7069909904</p>
           </div>
         </div>
+
         <div class="header1_2 ms-auto">
-          <a href="#" class=""><span class=""><i class="fa-brands fa-facebook-f"></i></span></a>
-          <a href="#" class=""><span class=""><i class="fa-brands fa-twitter"></i></span></a>
-          <a href="#" class=""><span class=""><i class="fa-brands fa-instagram"></i></span></a>
-          <a href="#" class=""><span class=""><i class="fa-brands fa-linkedin-in"></i></span></a>
+          <a href="https://www.facebook.com/sparsh.children.hospital.NICU.adajan.surat" class=""><span class=""><i class="fa-brands fa-facebook-f"></i></span></a>
+          <a href="https://twitter.com/SparshNicu" class=""><span class=""><i class="fa-brands fa-twitter"></i></span></a>
+          <a href="https://www.instagram.com/sparsh_children_hospital_nicu/" class=""><span class=""><i class="fa-brands fa-instagram"></i></span></a>
+          <a href="https://www.linkedin.com/company/sparsh-children-hospital-nicu" class=""><span class=""><i class="fa-brands fa-linkedin-in"></i></span></a>
         </div>
+
       </div>
 
       <nav class="navbar navbar-expand-lg bg-light  mt-xl-2 animated slidetodown">
@@ -89,7 +91,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase fw-semibold" href="./Gallary.html">Galary</a>
+                <a class="nav-link text-uppercase fw-semibold" href="./Gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase fw-semibold" href="./Parents_Corner.html">Parents Corner</a>
@@ -99,7 +101,7 @@
               </li>
             </ul>
           </div>
-            <a class=" btn theme-btn d-none d-xl-block" href="#" role="button" >Appointment</a>
+          <a class=" btn theme-btn d-none d-xl-block" href="#" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="appointment" >Appointment</a>
         </div>
       </nav>
     </div>   
@@ -184,13 +186,15 @@
               <p class="my-4">Our Clinic has grown to provide world class facilities to newbron and toddlers</p>
               <p class="my-4">Future depends on how we protect and nurture today's children, Thus our vision is to give
                 the best health care facility to every single child.</p>
-              <div class="d-flex footer-link">
-                <a href="#" class=""><span class=""><i class="fa-brands fa-facebook-f"></i></span></a>
-                <a href="#" class=""><span class=""><i class="fa-brands fa-pinterest-p"></i></span></a>
-                <a href="#" class=""><span class=""><i class="fa-brands fa-twitter"></i></span></a>
-                <a href="#" class=""><span class=""><i class="fa-brands fa-instagram"></i></span></a>
-                <a href="#" class=""><span class=""><i class="fa-brands fa-linkedin-in"></i></span></a>
-              </div>
+
+                <div class="d-flex footer-link">
+                  <a href="https://www.facebook.com/sparsh.children.hospital.NICU.adajan.surat" class=""><span class=""><i class="fa-brands fa-facebook-f"></i></span></a>
+                  <a href="https://in.pinterest.com/sparshchildrenhospital/" class=""><span class=""><i class="fa-brands fa-pinterest-p"></i></span></a>
+                  <a href="https://twitter.com/SparshNicu" class=""><span class=""><i class="fa-brands fa-twitter"></i></span></a>
+                  <a href="https://www.instagram.com/sparsh_children_hospital_nicu/" class=""><span class=""><i class="fa-brands fa-instagram"></i></span></a>
+                  <a href="https://www.linkedin.com/company/sparsh-children-hospital-nicu" class=""><span class=""><i class="fa-brands fa-linkedin-in"></i></span></a>
+                </div>
+
             </div>
           </div>
 
@@ -276,6 +280,70 @@
   </a>
 
 
+  <!-- Appointment modal box -->
+  <div class="modal fade main-appointment" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog appoinment_modal">
+      <figure>
+      <div class="modal-content">
+        <div class="modal-header position-relative">
+          <span  data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-semibold mb-3">Make an Appointment</h2>
+          <p class="" style="width: 60%;">We provide the most full medical services, so every person could have the oportunity to receive qualitative medical help.</p>
+
+          <div class="form-box">
+            <form action="">
+
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-12 textarea">
+                        <div class="form-group mb-4">
+                            <input class="form-control form-control" type="text" placeholder="Your Name" aria-label=".form-control-lg example">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input class="form-control form-control" type="email" placeholder="Email Address" aria-label=".form-control-lg example">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input class="form-control form-control" type="date" placeholder="mm/dd/yyyy" aria-label=".form-control-lg example">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 textarea">
+                      <div class="form-group mb-4">
+                        <input class="form-control form-control" type="text" placeholder="Your phone" aria-label=".form-control-lg example">
+                    </div>
+                    <div class="form-group mb-4">
+                      <select name="department" class="form-select"  aria-placeholder="Select Department" >
+                        <option value="default"  disabled selected>Select Department</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Urology">Urology</option>
+                        <option value="Gynecological">Gynecological</option>
+                        <option value="Laboratory">Laboratory</option>
+                        <option value="Pediatrical">Pediatrical</option>
+                      </select>
+                    </div>
+                    <div class="form-group mb-4">
+                      <select name="department" class="form-select"  aria-placeholder="Select Time">
+                        <option value="default"  disabled selected>Please Select a Department</option>
+                      </select>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" placeholder="Massage" id="floatingTextarea" style="height: 193px;"></textarea>
+                  </div>
+                </div>
+            </form>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark">Submit Now</button>
+        </div>
+      </div>
+    </figure>
+    </div>
+  </div>
 
 
 

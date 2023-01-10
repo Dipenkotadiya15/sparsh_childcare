@@ -1,26 +1,5 @@
 $(document).ready(function() {
-    
-    // $('.owl-carousel').owlCarousel({
-    //     loop:true,
-    //     margin:10,
-    //     nav:true,
-    //     dots: true,
-    //     autoPlay: true,
-    //     autoplayTimeout: 1000,
-    //     navText:[
-    //         '<i class="fa-solid fa-less-than"></i>',
-    //         '<i class="fa-solid fa-greater-than"></i>'
-    //     ],
-    //     responsiveClass:true,
-    //     responsive:{
-    //         0:{
-    //             items:1,
-    //         }
-    //     }
-    // })
-
-
-    
+        
     $("#owl-demo").owlCarousel({
         nav: true,
         dots: false,
@@ -70,6 +49,7 @@ $(document).ready(function() {
     $("#owl-demo3").owlCarousel({
         
         dots: false,
+        nav:true,
         items : 1,
         autoplay:true,
         autoplayTimeout:5000,
@@ -145,14 +125,22 @@ let scrollpos = window.scrollY;
 
 
     // SCROLL TO TOP :-
-    const toTop = document.querySelector('.to-top');
+    // const toTop = document.querySelector('.to-top');
 
-    window.addEventListener('sccroll', () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add('active');
+    // window.addEventListener('sccroll', () => {
+    //     if (window.pageYOffset > 100) {
+    //         toTop.classList.add('active');
+    //     } else {
+    //         toTop.classList.remove('active');
+    //     }
+    // })    
+
+    $(window).scroll(function (e) {
+        if ($(this).scrollTop() > 0) {
+            $(".to-top").css("display", "block");
         } else {
-            toTop.classList.remove('active');
+            $(".to-top").css("display", "none");
         }
-    })
-
+    });
+  
     

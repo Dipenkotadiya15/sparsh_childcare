@@ -90,7 +90,7 @@ body {
     border: none;
     border-radius: 0;
     opacity: 0.9;   
-    padding: 38px 0 18px;
+    padding: 15px 0;
 }
 
 .navbar.sticky .theme-btn {
@@ -156,7 +156,8 @@ body {
 
 .fullmoj #owl-demo .owl-stage-outer { height: 600px !important;}
 
-.owl-carousel .owl-nav button.owl-next {
+
+.fullmoj .owl-theme .owl-nav button.owl-next {
     position: absolute;
     top: calc(50% - 30px);
     right: 0;
@@ -172,7 +173,7 @@ body {
     display: none;
 }
 
-.owl-carousel .owl-nav button.owl-prev {
+.fullmoj .owl-theme .owl-nav button.owl-prev {
     position: absolute;
     top: calc(50% - 30px);
     left: 0;
@@ -466,25 +467,9 @@ body {
     }
 
     #owl-demo3 .item1 { margin: 0 100px ;}
+    
+    .main-slider .first-slider .item1 p { color: #111; }
 
-    /* .patientnbg .main-slider .first-slider #owl-demo3 .owl-nav button .owl-prev {
-        position: absolute;
-        top: calc(50% - 50px);
-        left: 0;
-        opacity: 1;
-        font-size: 25px !important;
-        z-index: 1;
-        width: 40px;
-        height: 40px;
-        border: 1px solid #4aded2 !important;
-        border-radius: 50%;
-        color: #4aded2 !important;
-        background-color: #fff !important;
-        margin: 5px 15px;
-    } */
-
-/* ============================================================================================ */
-   
     .main-slider .second-slider .item { 
         width: 100px;
         border: none;
@@ -513,12 +498,23 @@ body {
         width: auto !important
     }
 
+    .main-slider .first-slider .owl-carousel .owl-nav button.owl-next { right: 0; }
+    .main-slider .first-slider .owl-carousel .owl-nav button.owl-prev { left: 0; }
+
     .main-slider .first-slider .owl-carousel .owl-nav button.owl-next, 
     .main-slider .first-slider .owl-carousel .owl-nav button.owl-prev { 
         background-color: #fff !important;
         color: #1d67d5 !important;
         border: 1px solid #1d67d5 !important;
         border-radius: 50% !important;
+        position: absolute;
+        top: calc(50% - 33px);
+        opacity: 0.5;
+        font-size: 25px ;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        margin: 5px 15px;
     }
 
     .main-slider .second-slider .item img {
@@ -532,14 +528,12 @@ body {
     }
 
     .main-slider .second-slider .slider-caption {
-        position: absolute;
-        top: 77%;
-        left: 0;
+        position: relative;
+        margin-top: -20px;
         z-index: 1;
         text-align: center;
     }
     .main-slider .second-slider .slider-caption span  {
-        text-align: center;
         border: none;
         border-radius: 50%;
         background: #fff;
@@ -548,21 +542,16 @@ body {
         display: inline-block;
         width: 35px;
         height: 35px;
-        line-height: 33px;
+        line-height: 33px;   
     }
 
-    .main-slider .second-slider .slider-caption p { color: #88d1cb; }
-    
-    .main-slider .second-slider .owl-stage-outer {
-        overflow: visible !important;
-    }
+    .main-slider .second-slider .slider-caption p { color: #88d1cb; }       
+    .main-slider .second-slider .owl-stage-outer { overflow: visible !important; }
 
     .main-slider .second-slider .owl-item {
         opacity: 0.4;
         transition: all ease 0.4s;
     }
-
-    
 
     .main-slider .second-slider .owl-item .slider-caption {
         opacity: 0;
@@ -641,6 +630,7 @@ body {
     }
 
     .to-top {
+    
         background-color: #fff;
         color: #1f1f1f;
         position: fixed;
@@ -657,6 +647,7 @@ body {
         opacity: 1;
         pointer-events: auto;
         transition: all 0.4s;
+        z-index: 100;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
     }
@@ -679,7 +670,7 @@ body {
 
 .opd_ward, .Vaccination, .parents_corner_11 { padding-bottom: 100px;  box-shadow: 10px 0 10px rgb(0 0 0 / 5%); }
 
-.nicubg, .parents_corner_bg, .contactbg { 
+.nicubg, .parents_corner_bg, .gallerybg, .contactbg { 
     padding: 70px 0; 
     background-image: url(../ss/background_image.jpg);
     background-repeat: no-repeat;
@@ -777,7 +768,37 @@ body {
 
 
 /* ================================================================================================== */
+/* --------------------------------- Gallery Department --------------------------------- */
 
+  .image-box123 figure img {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: 0.9s ease-in-out;
+  }
+
+ 
+  /* .Gallery-box .overlay123 .icon-box span {
+    position: relative;
+    height: 50px !important;
+    width: 50px !important;
+    background-color: #88d1cb;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(-25px) scale(0);
+    transition: all 200ms ease;
+  } 
+
+  .Gallery-box .image-box123:hover .overlay123 .icon-box span {
+    opacity: 1;
+    transform: translateY(-25px) scale(1);
+    } */
+
+/* ================================================================================================== */
 /* --------------------------------- Parents Corner Department --------------------------------- */
 
 .doctors-timetable {
@@ -832,6 +853,7 @@ body {
 
 /* --------------------------------- Contact_Us Department --------------------------------- */
 
+.p-top { padding-top: 85px; }
 .mobile-icon a { color: black; text-decoration: none; } 
 .mobile-icon a:hover { color: black; text-decoration: underline; } 
 
@@ -850,3 +872,68 @@ body {
     transition: top ease 0.5s;
     padding: 25px;
 }
+
+.main-box12 { width: 50%; }
+
+/* ================================================================================================== */
+/* --------------------------------- Appoinment Model Department --------------------------------- */
+/* .modalbg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000005e;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.main-modal {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    margin: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+.close {
+    text-align: right;
+} */
+
+.main-appointment .appoinment_modal  figure { padding: 10px; background-color: #fff; }
+
+.appoinment_modal { max-width: 70% !important; }
+.modal-header { border-bottom: none !important; }
+.modal-footer {
+    border-top: none !important;
+    justify-content: start !important; 
+ }
+
+.main-appointment .appoinment_modal .modal-content { 
+    /* background-color: gray !important; */
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: rgba(204, 204, 204, 0.2);
+    background-image: url(../ss/modalbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.appoinment_modal .modal-header span {
+    position: absolute;
+    top: -60%;
+    right: -2%;
+    background-color: #111;
+    color: #fff;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+}   
