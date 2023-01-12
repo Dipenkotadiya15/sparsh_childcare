@@ -31,11 +31,19 @@ body {
 
 
 .navbar {
-    background-color: lightgray;
+    
     border: 1px solid #d9d8d8fe;
     border-radius: 40px;
-    width: 95%;
+    /* width: 95%; */
+    margin-left: 0;
 }
+
+.lower-header .navbar::before {
+    width: 80%;
+}
+
+
+
 .navbar a img {
     height: auto;
     width: 150px;
@@ -71,8 +79,8 @@ body {
 }
 
 .theme-btn:hover, .about-btn:hover,  .navbar.sticky .theme-btn:hover {
-    color: #88d1cb;
-    background-color: #fff;
+    color: #111;
+    background-color: darkgray;
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     transform: translateY(0) scale(1.2);
 }
@@ -85,11 +93,11 @@ body {
     z-index: 800;
     left: 0;
     width: 100%;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
     box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
     border: none;
     border-radius: 0;
-    opacity: 0.9;   
+    opacity: 0.98;   
     padding: 15px 0;
 }
 
@@ -97,15 +105,6 @@ body {
     position: absolute;
     right: 4%;
     bottom: 23%;
-}
-
-.navbar.sticky .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.navbar.sticky .slidetodown {
-    animation-name: slidetodown;
 }
 
 
@@ -937,3 +936,36 @@ body {
     border: none;
     border-radius: 50%;
 }   
+
+
+.item-125 figure {
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.item-125 img {
+    transform: scale(1);
+    transition: 0.5s ease;
+}
+
+.item-125 img:hover {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}   
+
+.gallery-btn {
+    transition: all 0.5s ease;
+    background: #111;
+    color: #fff;
+    border: 0;
+   padding: 10px 25px;
+}
+
+.gallery-btn:hover {
+    color: #111;
+    background-color: #88d1cb;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    transform: translateY(0) scale(1.2);
+}

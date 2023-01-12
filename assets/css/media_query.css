@@ -1,6 +1,6 @@
 @media screen and (max-width:1599px) {
     .halfimg { width: 350px; top: 38%; }
-    .navbar-collapse .navbar-nav { margin: 0 138px; }
+    /* .navbar-collapse .navbar-nav { margin: 0 138px; } */
 }
 
 @media screen and (max-width:1399px) {
