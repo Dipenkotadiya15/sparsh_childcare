@@ -1,6 +1,5 @@
 @media screen and (max-width:1599px) {
     .halfimg { width: 350px; top: 38%; }
-    /* .navbar-collapse .navbar-nav { margin: 0 138px; } */
 }
 
 @media screen and (max-width:1399px) {
@@ -13,6 +12,7 @@
     .navbar { width: 100%; border:none; border-radius: 0; }
     .navbar-collapse .navbar-nav {  margin: 0; }
     .appoinment_modal .modal-header span { right: -3%; }
+    .lower-header::before { right: 0; border: none; border-radius: 0;}
     
 }
 
@@ -28,6 +28,8 @@
     .navbar.sticky{ display: none; }
     .p-top { padding-top: 25px; }
     .main-box12 { width: 90%; }
+    .opd { margin-top: 50px; } 
+    .fullmoj #owl-demo .owl-stage-outer { height: 550px !important; }
 }
 
 @media screen and (max-width:767px) {
@@ -36,6 +38,8 @@
     .copyright p { font-size: 15px; text-align: center; }
     .contentcol { padding: 50px 12px 0; }
     .appoinment_modal { width: auto !important; margin: 27px auto; }
+    .opd { margin-top: 0; }
+    .fullmoj #owl-demo .owl-stage-outer { height: 450px !important; }
 }
 
 @media screen and (max-width:575px) {
@@ -46,6 +50,7 @@
     .class2 { text-align: center; }
     .class2 img { width: 85%; }
     .map-size iframe { width: 200px; }
+    .fullmoj #owl-demo .owl-stage-outer { height: 350px !important; }
 }
 
 @media screen and (max-width:425px) {
@@ -55,4 +60,5 @@
     .class2 { text-align: center; }
     .class2 img { width: 60%; margin-top: 25px; }
     .map-size iframe { width: 160px; }
+    .fullmoj #owl-demo .owl-stage-outer { height: 300px !important; }
 }
