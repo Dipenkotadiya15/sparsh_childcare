@@ -27,7 +27,7 @@
     .doctor-content { width: 70%; margin: 0 auto; }
     .navbar.sticky{ display: none; }
     .p-top { padding-top: 25px; }
-    .main-box12 { width: 90%; }
+    /* .main-box12 { width: 90%; } */
     .opd { margin-top: 50px; } 
     .fullmoj #owl-demo .owl-stage-outer { height: 550px !important; }
 }
