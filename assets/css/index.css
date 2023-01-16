@@ -10,6 +10,7 @@ body {
     box-sizing: border-box;
 }
 
+p { font-size: 16px; }
 /* <!-------------------------------------- 1_Header Section --------------------------------------> */
 
 .main-header {
@@ -55,7 +56,7 @@ body {
 
 .navbar a img {
     height: auto;
-    width: 150px;
+    width: 75px;
     max-width: 100%;
     padding: 10px 0 3px;
 }
@@ -150,7 +151,7 @@ body {
 }
 
 .fullmoj #owl-demo .owl-stage-outer {
-    height: 600px !important;
+    height: 100% !important;
 }
 
 
@@ -205,6 +206,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    background-position: center;
 }
 
 
@@ -621,7 +623,7 @@ body {
 }
 
 .footer-content .logoimage {
-    width: 250px;
+    width: 100px;
 }
 
 .footer-content p {
@@ -793,10 +795,6 @@ body {
     background-color: #eeeeee4e;
 }
 
-.content-b p {
-    font-size: 20px;
-}
-
 .facilities .btn-hover,
 .Vaccination .btn-hover,
 .opd_ward .btn-hover {
@@ -874,9 +872,9 @@ body {
 }
 
 .doctors-timetable thead tr th {
-    font-size: 35px;
+    font-size: 18px;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 60px;
     height: 60px;
     text-align: center;
@@ -899,9 +897,9 @@ body {
 }
 
 .doctors-timetable tbody tr td span {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .doctors-timetable tbody tr td:nth-child(even) {
@@ -948,9 +946,9 @@ body {
     padding: 25px;
 }
 
-.main-box12 {
+/* .main-box12 {
     width: 50%;
-}
+} */
 
 
 /* --------------------------------- Appoinment Model Department --------------------------------- */
